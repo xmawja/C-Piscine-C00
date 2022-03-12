@@ -6,7 +6,7 @@
 /*   By: mujmoham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:17:13 by mujmoham          #+#    #+#             */
-/*   Updated: 2022/03/12 17:42:03 by mujmoham         ###   ########.fr       */
+/*   Updated: 2022/03/12 20:28:03 by mujmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ void ft_putchar(char c)               //declare ft_putchar function
 
 int main()                           // declare main function
 {
-    ft_putchar('4');                 // call ft_putchar function
+    ft_putchar('2');                 // call ft_putchar function
     return 0;
 };
