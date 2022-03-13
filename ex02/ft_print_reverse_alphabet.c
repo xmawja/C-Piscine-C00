@@ -1,24 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mujmoham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/10 16:17:13 by mujmoham          #+#    #+#             */
-/*   Updated: 2022/03/12 20:28:03 by mujmoham         ###   ########.fr       */
+/*   Created: 2022/03/13 09:47:41 by mujmoham          #+#    #+#             */
+/*   Updated: 2022/03/13 11:09:15 by mujmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h> //call standard library
+#include <unistd.h>
 
-void ft_putchar(char c) // declare ft_putchar function
+void ft_putchar(char z) // using ft_putchar funchtion ex00
 {
-  write(1, &c, 1);
+  write(1, &z, 1);
 };
 
-int main() // declare main function
+void ft_print_reverse_alphabet(void) // declare reverse alphabet function
 {
-  ft_putchar('2'); // call ft_putchar function
+  char r;
+  r = 'z';
+  while (r >= 'a') {
+    ft_putchar(r);
+    r--;
+  }
+};
+
+int main(void) // declare main function
+{
+  ft_print_reverse_alphabet();
   return 0;
 };

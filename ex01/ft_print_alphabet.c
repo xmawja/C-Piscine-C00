@@ -1,24 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mujmoham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/10 16:17:13 by mujmoham          #+#    #+#             */
-/*   Updated: 2022/03/12 20:28:03 by mujmoham         ###   ########.fr       */
+/*   Created: 2022/03/12 19:48:26 by mujmoham          #+#    #+#             */
+/*   Updated: 2022/03/12 20:31:22 by mujmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h> //call standard library
+#include <unistd.h>
 
-void ft_putchar(char c) // declare ft_putchar function
+void ft_putchar(char a) // using ft_putchar function ex00
 {
-  write(1, &c, 1);
+  write(1, &a, 1);
 };
 
-int main() // declare main function
+void ft_print_alphabet(void) // declare alphabet function
 {
-  ft_putchar('2'); // call ft_putchar function
+  char l;
+  l = 'a';
+  while (l <= 'z') {
+    ft_putchar(l);
+    l++;
+  }
+};
+
+int main(void) // declare main function
+{
+  ft_print_alphabet();
   return 0;
 };
