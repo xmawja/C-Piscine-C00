@@ -10,26 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <unistd.h>
 
-void ft_putchar(char z)                         // using ft_putchar funchtion ex00
+void ft_putchar(char z) // using ft_putchar funchtion ex00
 {
-	write(1, &z, 1);
-}
-
-void ft_print_reverse_alphabet(void)            // declare reverse alphabet function
-{
-	char r;
-	r = 'z';
-	while (r >= 'a') {
-		ft_putchar(r);
-		r--;
-	}
+  write(1, &z, 1);
 };
-int main(void)                                  // declare main function
 
+void ft_print_reverse_alphabet(void) // declare reverse alphabet function
 {
-	ft_print_reverse_alphabet();
-	return 0;
+  char r;
+  r = 'z';
+  while (r >= 'a') {
+    ft_putchar(r);
+    r--;
+  }
+};
+
+int main(void) // declare main function
+{
+  ft_print_reverse_alphabet();
+  return 0;
 };

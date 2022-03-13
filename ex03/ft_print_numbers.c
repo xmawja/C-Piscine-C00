@@ -12,22 +12,21 @@
 
 #include <unistd.h>
 
-void ft_putchar(int num)                        // using ft_putchar function ex00
+void ft_putchar(int num) // using ft_putchar function ex00
 {
-    write(1, &num, 1);
+  write(1, &num, 1);
 };
-void ft_print_numbers(void)                     // declare ft_print_numbers function
+void ft_print_numbers(void) // declare ft_print_numbers function
 {
-    int n;
-    n = '0';
-    while(n <= '9')
-    {
-        ft_putchar(n);
-        n++;
-    };
+  int n;
+  n = '0';
+  while (n <= '9') {
+    ft_putchar(n);
+    n++;
+  };
 };
-int main(void)                                  // declare main function
+int main(void) // declare main function
 {
-    ft_print_numbers();
-    return 0;
+  ft_print_numbers();
+  return 0;
 };

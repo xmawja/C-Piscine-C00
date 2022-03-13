@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>                   //call standard library
-    
-void ft_putchar(char c)               //declare ft_putchar function
+#include <unistd.h> //call standard library
+
+void ft_putchar(char c) // declare ft_putchar function
 {
-    write(1, &c, 1);
+  write(1, &c, 1);
 };
 
-int main()                           // declare main function
+int main() // declare main function
 {
-    ft_putchar('2');                 // call ft_putchar function
-    return 0;
+  ft_putchar('2'); // call ft_putchar function
+  return 0;
 };
