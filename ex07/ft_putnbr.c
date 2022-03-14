@@ -10,4 +10,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 
+void ft_putchar(int n)
+{
+	write(1, &n,1);
+}
+
+void ft_putnbr(int nb)
+{
+	if (nb >= 0 && nb <= 10) {
+		ft_putchar(nb + '0');
+	}
+	else if (nb < 0) {
+		ft_putchar('-');
+	}
+	else {
+		ft_putnbr(nb /10);
+		ft_putnbr(nb %10);
+	}
+}
+int main(void)
+{
+		ft_putnbr(42);
+		return 0;		
+}
