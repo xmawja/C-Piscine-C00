@@ -12,12 +12,12 @@
 
 #include <unistd.h>
 
-void ft_putchar(int n)
+void ft_putchar(int n) // call ft_putchar function ex00
 {
 	write(1, &n,1);
 }
 
-void ft_putnbr(int nb)
+void ft_putnbr(int nb) // init ft_putnbr function
 {
 	if (nb >= 0 && nb <= 10) {
 		ft_putchar(nb + '0');
@@ -30,7 +30,7 @@ void ft_putnbr(int nb)
 		ft_putnbr(nb %10);
 	}
 }
-int main(void)
+int main(void) // init main function
 {
 		ft_putnbr(42);
 		return 0;		
