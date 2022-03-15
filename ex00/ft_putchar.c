@@ -6,19 +6,19 @@
 /*   By: mujmoham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 16:17:13 by mujmoham          #+#    #+#             */
-/*   Updated: 2022/03/12 20:28:03 by mujmoham         ###   ########.fr       */
+/*   Updated: 2022/03/15 13:31:35 by mujmoham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h> //call standard library
+#include <unistd.h> 
 
-void ft_putchar(char c) // declare ft_putchar function
+void	ft_putchar(char c)
 {
-  write(1, &c, 1);
-};
+	write(1, &c, 1);
+}
 
-int main() // declare main function
+int	main(void)
 {
-  ft_putchar('2'); // call ft_putchar function
-  return 0;
-};
+	ft_putchar('2');
+	return (0);
+}
